@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!--mediaquery-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <!--fontawesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scales=1.0">
+
     <title>Spotify</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -25,7 +27,7 @@
     </div>
     <div class="cont">
     <div class="title white container">
-      <h2>Playlist</h2>
+      <h2 id="title_js">Playlist</h2>
      <i class="fa fa-plus-square" aria-hidden="true"></i>
      <p class="grey">Cerca playlist</p>
     </div>
@@ -39,6 +41,7 @@
         <li class="my-lista grey">Nome playlist</li>
       </ul>
     </div>
+
     <!--<div class="flex-container">
       <div class="contenitore">
         <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
@@ -67,10 +70,13 @@
   </div>
 
 
-  <div class="clearfix tracks">
-    <h2 class="white">Recently played</h2>
+  <div class="tracks">
+    <div class="title-recently">
+      <h2 class="white">Recently played</h2>
+    </div>
+
     <ul>
-      <li>
+      <li class="h-100">
         <div class="track">
           <div class="track-img">
             <img class="size-2" src="img/metal_lifting.jpg" alt="">
@@ -79,7 +85,7 @@
           <p class="para">subtitle</p>
         </div>
       </li>
-      <li>
+      <li class="h-100">
         <div class="track">
           <div class="track-img">
             <img class="size-2" src="img/stranger.jpeg" alt="">
@@ -88,7 +94,7 @@
           <p class="para">Lyle Dixon & icheal Stein</p>
         </div>
       </li>
-      <li>
+      <li class="h-100">
         <div class="track">
           <div class="track-img">
             <img class="size-2" src="img/aquietplace.jpeg" alt="">
@@ -97,7 +103,7 @@
           <p class="para">Subtitle</p>
         </div>
       </li>
-      <li>
+      <li class="h-100">
         <div class="track">
           <div class="track-img">
             <img class="size-2" src="img/split.jpeg" alt="">
@@ -106,7 +112,7 @@
           <p class="para">Subtitle</p>
         </div>
       </li>
-      <li>
+      <li class="h-100">
         <div class="track">
           <div class="track-img">
             <img class="size-2" src="img/cure.jpeg" alt="">
@@ -115,7 +121,7 @@
           <p class="para">Subtitle</p>
         </div>
       </li>
-      <li>
+      <li class="h-100">
         <div class="track">
           <div class="track-img">
             <img class="size-2" src="img/sinister.jpeg" alt="">
@@ -190,6 +196,12 @@
     <i class="fa fa-play-circle-o pad white" aria-hidden="true"></i>
     <i class="fa fa-step-forward pad white" aria-hidden="true"></i>
   </div>
+
+
+
+
+
+
     <div class="barra">
 
     </div>
@@ -212,5 +224,12 @@
  </div>
   </section>
   </main>
+  <!--script-->
+  <!--<script type="text/javascript">
+
+  document.getElementByid("js").innerHTML= 'lista nusica';
+
+</script>-->
+<script src="script.js" charset="utf-8"></script>
   </body>
 </html>
