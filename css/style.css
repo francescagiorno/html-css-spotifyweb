@@ -13,6 +13,7 @@ main{
   height: 100vh;
   width: 200px;
   background-color: black;
+  float: left;
 }
 .size-lo{
   height: 30px;
@@ -114,6 +115,11 @@ i{
   padding: 10px;
   text-align: center;
 }
+.footer-left{
+  position: fixed;
+  top: 500px;
+  left: 20px;
+}
 /*.container-flex{
   display: flex;
 }
@@ -200,19 +206,21 @@ h3{
   min-width: 200px;
   border: 1px solid black;
 }
+.progress{
+  display: flex;
+}
 .barra{
-  position: absolute;
-  top: 40px;
-  left: 55px;
+  justify-content: center;
+  align-content: center;
   background-color: black;
   height: 4px;
   width: 80%
 
 }
 .little-barra{
-  position: absolute;
-  top: 40px;
-  left: 25px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   background-color: grey;
   height: 4px;
   width: 10%
@@ -262,4 +270,12 @@ h3{
     width: calc(100vw / 4);
     height: calc(100vw / 4);
 
+}
+
+
+
+@media screen and (max-width:470px) {
+.left{
+width: 50px;
+}
 }
